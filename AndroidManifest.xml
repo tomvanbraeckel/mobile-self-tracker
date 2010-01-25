@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.tracking" android:versionCode="1" android:versionName="1.0">
+
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<receiver android:name=".RepeatingAlarm" android:process=":remote" />
+		<activity android:name=".SelfTracker" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+
+		<!--
+			Kind of a stealth activity that just asks to take pictures but
+			doesn't show up on the usual activity lists.
+		-->
+		<activity android:excludeFromRecents="true"
+			android:launchMode="singleInstance" android:noHistory="true"
+			android:name=".TakePicture" android:label=""
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+		<activity android:name=".Preferences" android:label="@string/preferences">
+
+		</activity>
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+
+</manifest> 
