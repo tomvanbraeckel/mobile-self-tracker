@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="alarm_controller">This application is part of a larger, self tracking
+		software suite. Currently, it periodically pops up a dialog asking if
+		you want to take a picture. Author: Tom Van Braeckel
+		&lt;tomvanbraeckel@gmail.com&gt;</string>
+	<string name="app_name">SelfTracker</string>
+	<string name="preferences">Preferences</string>
+
+	<string name="repeating_received">Repeating received</string>
+	<string name="repeating_scheduled">Repeating scheduled</string>
+	<string name="repeating_unscheduled">Repeating unscheduled</string>
+
+	<string name="start_repeating_alarm">Start repeating alarm</string>
+	<string name="stop_repeating_alarm">Stop repeating alarm</string>
+
+	<string name="dialog_activity_text">Do you want to take a picture ?</string>
+</resources>
